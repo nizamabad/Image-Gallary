@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Task.css">
+    <script src="Task.js"></script>
+</head>
+
+<body>
+    <h1>Image Gallery</h1>
+
+    <div class="gallery" onclick="openLightbox(event)">
+        <img src="./Image/bird1.jpg" alt="Image 1">
+        <img src="./Image/bird2.jpg" alt="Image 2">
+        <img src="./Image/bird3.jpg" alt="Image 3">
+        <img src="./Image/bird4.jpg" alt="Image 4">
+        <img id="img1" src="./Image/bird5.jpg" alt="Image 5">
+        <img id="img1" src="./Image/bird6.jpg" alt="Image 6">
+        <img id="img1" src="./Image/bird7.jpg" alt="Image 7">
+        <img id="img1" src="./Image/bird8.jpg" alt="Image 8">
+    </div>
+
+    <!-- Lightbox container -->
+    <div id="lightbox">
+        <!-- Close button -->
+        <span id="close-btn" onclick="closeLightbox()">&times;</span>
+
+        <!-- Main lightbox image -->
+        <img id="lightbox-img" src="" alt="lightbox image">
+
+        <!-- Thumbnails container -->
+        <div id="thumbnail-container">
+            <!-- Thumbnails will be added dynamically using JavaScript -->
+        </div>
+
+        <!-- Previous and Next buttons -->
+        <button id="prev-btn" onclick="changeImage(-1)">&lt; Prev</button>
+        <button id="next-btn" onclick="changeImage(1)">Next &gt;</button>
+    </div>
+
+</body>
+
+</html>
